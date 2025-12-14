@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <section class="card">
+            <header class="card-header">
+                <h1 class="title">People Entered</h1>
+                <p class="subtitle">Quick counter with simple save history</p>
+            </header>
+            <div class="count-wrap">
+                <div id="count-el" class="count">0</div>
+            </div>
+            <div class="actions">
+                <button id="btn-increment" class="btn primary" onclick="increment()">Increment</button>
+                <button id="btn-save" class="btn success" onclick="save()">Save</button>
+            </div>
+            <p id="save-el" class="history">Previous entries: </p>
+        </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
